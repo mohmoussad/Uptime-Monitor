@@ -1,0 +1,33 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27018:27017
+    volumes:
+      - db:/data/db
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "4000:4000"
+    depends_on:
+      - mongo
+    env_file: .env
+    environment:
+      # - SERVER_URL=localhost:4000
+      # - PORT=4000
+      # - JWT_SECRET_KEY=mohmoussad@Bosta
+      - MONGO_URI=mongodb://mongo:27017/uptimeDB?authSource=admin
+      # - DB_NAME=uptimeDB
+      # - EMAIL_SERVER_HOST=sandbox.smtp.mailtrap.io
+      # - EMAIL_SERVER_PORT=587
+      # - EMAIL_SERVER_USER=66ac47ba58bdb0
+      # - EMAIL_SERVER_PASS=88b96b839ddfb5
+      # - SENDER_EMAIL=uptime.monitor@me.com
+
+volumes:
+  db:
