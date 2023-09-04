@@ -201,5 +201,5 @@ I built a testing server using to facilitate testing different use cases like:
  - Timeout
  - TCP servers
 
-It's not so optimozed, I just build it on the fly for testing purposes, You can find it [here](https://github.com/mohmoussad/Uptime-Monitor-Testing-Server)
+It's not so optmized, I just built it on the fly for testing purposes, You can find it [here](https://github.com/mohmoussad/Uptime-Monitor-Testing-Server)
 
