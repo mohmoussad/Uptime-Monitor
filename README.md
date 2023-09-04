@@ -46,7 +46,7 @@ Uptime monitoring RESTful API server that allows authenticated users to monitor 
 
 ## Usage:
 
-- Clone the repo: `$ git clone https://github.com/mohmoussad/uptime-monitor`
+- Clone the repo: `git clone https://github.com/mohmoussad/Uptime-Monitor`
 - Copy `.env.example` to `.env` and edit `.env`
     ```
     # Server
@@ -201,5 +201,5 @@ I built a testing server using to facilitate testing different use cases like:
  - Timeout
  - TCP servers
 
-It's not so optimozed, I just build it on the fly for testing purposes, You can find it [here](https://github.com/mohmoussad/uptime-monitor-testing-server)
+It's not so optimozed, I just build it on the fly for testing purposes, You can find it [here](https://github.com/mohmoussad/Uptime-Monitor-Testing-Server)
 
